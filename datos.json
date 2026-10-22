@@ -1,0 +1,22 @@
+{
+  "nombre": "El Palacio",
+  "subtitulo": "Café & Cocina",
+  "descripcion_corta": "Un rincón de encuentro y descanso en pleno centro de Salto. Menús accesibles y de calidad para desayunar, merendar o almorzar.",
+  "sobre_nosotros": "Nuestra cafetería está pensada para poder brindar en pleno centro de la ciudad, un rincón de encuentro y de descanso. Donde se puede elegir entre una variada oferta de menús accesibles y de calidad para desayunar o merendar y también almorzar.",
+  "contacto": {
+    "direccion": "Artigas 899, Esq. 33 Orientales",
+    "ciudad": "Salto, Uruguay",
+    "codigo_postal": "50000",
+    "telefono": "4734 0421",
+    "telefono_link": "tel:47340421",
+    "instagram": "https://www.instagram.com/palaciococinacasera/",
+    "pedidosya": "https://www.pedidosya.com.uy"
+  },
+  "informacion": {
+    "horario": "Abierto · Cierra a las 7:00 p. m.",
+    "rango_precio": "$ 200 - $ 400 por persona",
+    "permanencia": "Entre 45 min y 3 h",
+    "calificacion": "4.6",
+    "opiniones_cant": "280 opiniones en Google"
+  }
+}

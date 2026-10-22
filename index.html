@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Palacio Café & Cocina | Salto</title>
+  <!-- Tailwind CSS por CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              brown: '#4A2E1D',
+              gold: '#D4A373',
+              cream: '#FAEDCD',
+              dark: '#2B1E16'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-brand-brown text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div>
+        <h1 id="app-nombre" class="text-2xl font-serif font-bold text-brand-cream">El Palacio</h1>
+        <p id="app-subtitulo" class="text-xs text-brand-gold uppercase tracking-widest">Café & Cocina</p>
+      </div>
+      <a id="link-pedidosya" href="#" target="_blank" rel="noopener noreferrer" class="bg-brand-gold hover:bg-amber-600 text-white font-semibold text-sm px-4 py-2 rounded-lg transition shadow">
+        Pedir por PedidosYa
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative bg-brand-dark text-white py-20 px-4">
+    <div class="relative max-w-4xl mx-auto text-center space-y-6">
+      <span class="inline-block bg-brand-gold/20 text-brand-gold text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+        Cafetería & Almuerzos en Salto
+      </span>
+      <h2 id="app-desc-corta" class="text-3xl md:text-5xl font-serif font-bold leading-tight">...</h2>
+      
+      <!-- Calificación Google -->
+      <div class="pt-4 flex justify-center items-center space-x-3">
+        <div class="flex text-amber-400 text-lg">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <span id="app-rating" class="font-bold text-white text-lg">4.6</span>
+        <span id="app-opiniones" class="text-stone-400 text-sm">(Google)</span>
+      </div>
+
+      <!-- Botones de Acción -->
+      <div class="pt-6 flex flex-wrap justify-center gap-4">
+        <a id="link-tel" href="#" class="bg-white text-brand-dark hover:bg-stone-100 font-semibold px-6 py-3 rounded-xl shadow flex items-center space-x-2 transition">
+          <i class="fa-solid fa-phone text-brand-brown"></i>
+          <span id="app-tel-txt">Llamar</span>
+        </a>
+        <a id="link-ig" href="#" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 text-white font-semibold px-6 py-3 rounded-xl shadow flex items-center space-x-2 transition">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion Nosotros -->
+  <section class="py-16 px-4 max-w-4xl mx-auto text-center">
+    <h3 class="text-xs uppercase font-bold text-brand-gold tracking-widest mb-2">De El Palacio Café & Cocina</h3>
+    <h4 class="text-3xl font-serif font-bold text-brand-brown mb-6">Nuestra Propuesta</h4>
+    <blockquote id="app-sobre-nosotros" class="text-xl italic text-stone-600 border-l-4 border-brand-gold pl-4 my-4 max-w-2xl mx-auto text-left">
+      "..."
+    </blockquote>
+  </section>
+
+  <!-- Tarjetas Informativas -->
+  <section class="py-12 bg-brand-cream/40 px-4">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Ubicación -->
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
+        <div class="w-10 h-10 bg-brand-cream text-brand-brown rounded-lg flex items-center justify-center text-lg mb-3">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <h5 class="font-bold text-lg text-brand-dark mb-1">Ubicación y Horario</h5>
+        <p id="app-direccion" class="text-stone-600 text-sm mb-2"></p>
+        <p id="app-horario" class="text-xs text-emerald-700 font-semibold"></p>
+      </div>
+
+      <!-- Precios -->
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
+        <div class="w-10 h-10 bg-brand-cream text-brand-brown rounded-lg flex items-center justify-center text-lg mb-3">
+          <i class="fa-solid fa-wallet"></i>
+        </div>
+        <h5 class="font-bold text-lg text-brand-dark mb-1">Precios</h5>
+        <p id="app-precio" class="text-stone-600 text-sm mb-2"></p>
+        <p id="app-permanencia" class="text-xs text-stone-500"></p>
+      </div>
+
+      <!-- Pedidos -->
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 bg-brand-cream text-brand-brown rounded-lg flex items-center justify-center text-lg mb-3">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+          <h5 class="font-bold text-lg text-brand-dark mb-1">Envíos</h5>
+          <p class="text-stone-600 text-sm">Pedidos directo por la app de PedidosYa.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-stone-400 py-8 text-center text-xs">
+    <p id="footer-txt" class="text-white font-serif font-bold text-base mb-1"></p>
+    <p>&copy; Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script para inyectar los datos desde datos.json -->
+  <script>
+    fetch('datos.json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('app-nombre').textContent = data.nombre;
+        document.getElementById('app-subtitulo').textContent = data.subtitulo;
+        document.getElementById('app-desc-corta').textContent = data.descripcion_corta;
+        document.getElementById('app-rating').textContent = data.informacion.calificacion;
+        document.getElementById('app-opiniones').textContent = `(${data.informacion.opiniones_cant})`;
+        document.getElementById('app-tel-txt').textContent = `Llamar: ${data.contacto.telefono}`;
+        document.getElementById('link-tel').href = data.contacto.telefono_link;
+        document.getElementById('link-ig').href = data.contacto.instagram;
+        document.getElementById('link-pedidosya').href = data.contacto.pedidosya;
+        document.getElementById('app-sobre-nosotros').textContent = `"${data.sobre_nosotros}"`;
+        document.getElementById('app-direccion').innerHTML = `${data.contacto.direccion}<br>${data.contacto.ciudad}`;
+        document.getElementById('app-horario').textContent = data.informacion.horario;
+        document.getElementById('app-precio').textContent = data.informacion.rango_precio;
+        document.getElementById('app-permanencia').textContent = `Permanencia: ${data.informacion.permanencia}`;
+        document.getElementById('footer-txt').textContent = `${data.nombre} ${data.subtitulo}`;
+      })
+      .catch(error => console.error('Error al cargar datos.json:', error));
+  </script>
+
+</body>
+</html>
